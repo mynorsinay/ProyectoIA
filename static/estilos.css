@@ -1,0 +1,107 @@
+body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .review-row {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .input-column {
+            flex: 1;
+        }
+        .result-column {
+            flex: 1;
+            min-height: 100px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            resize: vertical;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        #analyze-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #add-review-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+        #clear-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .remove-review-btn {
+            background-color: #ff9800;
+            color: white;
+            margin-top: 5px;
+        }
+        .result {
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .positive {
+            background-color: #d4edda;
+            color: #155724;
+            border-color: #28a745;
+        }
+        .negative {
+            background-color: #f8d7da;
+            color: #721c24;
+            border-color: #dc3545;
+        }
+        .neutral {
+            background-color: #e2e3e5;
+            color: #383d41;
+            border-color: #6c757d;
+        }
+        .error-message {
+            color: #dc3545;
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        .empty-result {
+            color: #6c757d;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+        }
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(0,0,0,.3);
+            border-radius: 50%;
+            border-top-color: #000;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }

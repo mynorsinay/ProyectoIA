@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analizador de Sentimientos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h1>Analizador de Sentimientos</h1>
+    
+    <form id="reviews-form">
+        <div id="reviews-container">
+            <div class="review-row">
+                <div class="input-column">
+                    <textarea name="review_text[]" placeholder="Escribe tu reseña aquí..." required></textarea>
+                    <button type="button" class="remove-review-btn">Eliminar esta reseña</button>
+                </div>
+                <div class="result-column">
+                    <div class="empty-result">El resultado aparecerá aquí</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button id="add-review-btn" type="button">Agregar otra reseña</button>
+            <button id="analyze-btn" type="button">Analizar Sentimientos</button>
+            <button id="clear-btn" type="button">Limpiar Todo</button>
+        </div>
+        
+        <div id="error-message" class="error-message hidden"></div>
+    </form>
+    <script src="{{ url_for('static', filename='funciones.js') }}"></script>
+</body>
+</html>
