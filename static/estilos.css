@@ -1,9 +1,15 @@
-body {
+    body {
             font-family: Arial, sans-serif;
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
+    h1 {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    }
         .review-row {
             display: flex;
             margin-bottom: 20px;
